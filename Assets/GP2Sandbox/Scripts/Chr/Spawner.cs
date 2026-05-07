@@ -29,7 +29,7 @@ namespace AM1
         /// </summary>
         public static void Listup()
         {
-            allSpawners = GameObject.FindObjectsOfType<Spawner>();
+            allSpawners = GameObject.FindObjectsByType<Spawner>(FindObjectsSortMode.None);
             spawners = new List<Spawner>(allSpawners);
             used.Clear();
         }
